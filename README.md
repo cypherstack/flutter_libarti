@@ -4,9 +4,9 @@ SPDX-FileCopyrightText: 2022 Foundation Devices Inc.
 SPDX-License-Identifier: GPL-3.0-or-later
 -->
 
-# tor
+# `flutter_libarti`
 
-[Foundation-Devices/tor](https://github.com/Foundation-Devices/tor) as a multi-platform Flutter FFI plugin for starting and stopping the Tor daemon. Based on [libtor-sys](https://github.com/MagicalBitcoin/libtor-sys).
+[Foundation-Devices/tor](https://github.com/Foundation-Devices/tor) as a multi-platform Flutter FFI plugin for starting and stopping the Tor daemon.  Based on [arti](https://gitlab.torproject.org/tpo/core/arti).
 
 ## Getting started
 
@@ -139,4 +139,3 @@ For example, see `sumAsync` in `lib/flutter_libtor.dart`.
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
-
