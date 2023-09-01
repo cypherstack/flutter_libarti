@@ -26,24 +26,24 @@ sudo apt install git build-essential cmake llvm clang pkg-config cargo rustc lib
 #### Linux
 
 1. Navigate to the `native/tor-ffi` directory in your project:
-   ```sh
-   cd native/tor-ffi
-   ```
+ ```sh
+ cd native/tor-ffi
+ ```
 
 2. Remove any previous build targets (it's normal to see an error message if it's your first build):
-   ```sh
-   rm -rf target
-   ```
+ ```sh
+ rm -rf target
+ ```
    
 3. Add Rust targets for Linux:
-  ```sh
-  rustup target add x86_64-unknown-linux-gnu
-  ```
+```sh
+rustup target add x86_64-unknown-linux-gnu
+```
 
 4. Build the project for Linux:
-  ```sh
-  cargo build --target x86_64-unknown-linux-gnu --release --lib
-  ```
+```sh
+cargo build --target x86_64-unknown-linux-gnu --release --lib
+```
 
 #### Android
 
@@ -59,9 +59,9 @@ cd native/tor-ffi
 ```
 
 3. Remove any previous build targets (it's normal to see an error message if it's your first build):
-   ```sh
-   rm -rf target
-   ```
+```sh
+rm -rf target
+```
 
 4. Add Rust targets for Android architectures:
 ```sh
