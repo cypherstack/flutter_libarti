@@ -1,6 +1,11 @@
 # flutter_libarti_example
 
-Demonstrates how to use the flutter_libarti plugin.
+Demonstrates how to use the tor plugin.
+
+ - [x] HTTP requests
+ - [?] HTTPS requests
+ - [x] Sockets
+ - [ ] SSL sockets
 
 ## Getting Started
 

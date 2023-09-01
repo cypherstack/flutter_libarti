@@ -138,7 +138,7 @@ class _MyAppState extends State<MyApp> {
 
                         // Connect to bitcoincash.stackwallet.com on port 50001 via socks socket.
                         //
-                        // Note that this is a non-SSL, example.
+                        // Note that this is a non-SSL example.
                         // TODO implement SSL.
                         await socksSocket.connectTo(
                             'bitcoincash.stackwallet.com', 50001);
