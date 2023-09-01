@@ -1,9 +1,9 @@
 #
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html.
-# Run `pod lib lint tor.podspec` to validate before publishing.
+# Run `pod lib lint flutter_libarti.podspec` to validate before publishing.
 #
 Pod::Spec.new do |s|
-  s.name             = 'tor'
+  s.name             = 'flutter_libarti'
   s.version          = '0.0.1'
   s.summary          = 'A new Flutter FFI plugin project.'
   s.description      = <<-DESC
@@ -20,13 +20,9 @@ A new Flutter FFI plugin project.
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'
-  s.platform = :ios, '9.0'
+  s.platform = :ios, '11.0'
 
   # Flutter.framework does not contain a i386 slice.
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
   s.swift_version = '5.0'
-end
-
-post_install do |installer|
-  system("cargo build --manifest-path ../../src/tor-ffi/Cargo.toml")
 end

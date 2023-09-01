@@ -1,6 +1,6 @@
-# flutter_libtor_example
+# flutter_libarti_example
 
-Demonstrates how to use the flutter_libtor plugin.
+Demonstrates how to use the flutter_libarti plugin.
 
 ## Getting Started
 
