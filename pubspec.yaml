@@ -2,7 +2,7 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-name: flutter_libtor
+name: tor
 description: A Flutter plugin for handling a Tor daemon
 version: 0.0.2
 homepage:
@@ -14,21 +14,20 @@ environment:
 dependencies:
   convert: ^3.0.1
   crypto: ^3.0.1
-  ffi: ^2.0.1
+  ffi: ^2.1.0
   flutter:
     sdk: flutter
   plugin_platform_interface: ^2.0.2
-  path_provider: ^2.0.2
+  path_provider: ^2.1.1
 
 dev_dependencies:
-  ffi: ^2.0.1
   ffigen: ^6.1.2
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
 
 ffigen:
-  output: 'lib/flutter_libtor_generated_bindings.dart'
+  output: 'lib/tor_generated_bindings.dart'
   llvm-path:
     - '/usr/lib/llvm-14/lib/libclang.so.1'
   globals:
@@ -44,11 +43,11 @@ ffigen:
     exclude:
       - _.*
   macros:
-    exclude:
+    eaxclude:
       - _.*
   functions:
     include:
-      - flutter_libtor_.*
+      - tor_.*
   headers:
     entry-points:
       - 'native/tor-ffi/target/tor-ffi.h'
